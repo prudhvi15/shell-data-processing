@@ -10,7 +10,7 @@
 1. ```tr ' ' '\12' < data.txt``` is used to divide each line into individual words.
 1. Pipe is defined as sending the results of one command as input to another command.
 1. ```tr ' ' '\12' < data.txt | sort``` is used to sort the text.
-1. ```tr ' ' '\12' < data.txt | sort | uniq -c``` is used to pipe the sorted output to uniq -c to count. "-c" flag is to check for sorted iput.
+1. ```tr ' ' '\12' < data.txt | sort | uniq -c``` is used to pipe the sorted output to uniq -c to count. "-c" flag is to check for sorted input.
 1. ```tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr``` is used to pipe the reduced output that is after getting unique words to sort with -nr flag.
 1. ```tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr > result.txt``` is used to redirect the output to result.txt file.
 1. Up arrow in bash shell is used to get previous commands we used.
